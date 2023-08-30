@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230830 11:39:16.038" rpa="false" schemaversion="4">
+<suite id="s1" name="Primeiro Teste" source="C:\Users\Davi\Documents\robot\robot\primeiro_teste.robot">
+<test id="s1-t1" name="Abrir navegador e acessar o site do organo" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url= http://localhost:3000</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230830 11:39:16.220" level="INFO">Opening browser 'Chrome' to base url ' http://localhost:3000'.</msg>
+<status status="PASS" starttime="20230830 11:39:16.219" endtime="20230830 11:39:18.080"/>
+</kw>
+<status status="PASS" starttime="20230830 11:39:16.219" endtime="20230830 11:39:18.080"/>
+</test>
+<test id="s1-t2" name="Preencher os campos do formulario" line="9">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-nome</arg>
+<arg>davi nicollas</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230830 11:39:18.083" level="INFO">Typing text 'davi nicollas' into text field 'id:form-nome'.</msg>
+<status status="PASS" starttime="20230830 11:39:18.083" endtime="20230830 11:39:18.257"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-cargo</arg>
+<arg>ti</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230830 11:39:18.258" level="INFO">Typing text 'ti' into text field 'id:form-cargo'.</msg>
+<status status="PASS" starttime="20230830 11:39:18.257" endtime="20230830 11:39:18.365"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:form-imagem</arg>
+<arg>https://picsum.photos/200/300</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230830 11:39:18.366" level="INFO">Typing text 'https://picsum.photos/200/300' into text field 'id:form-imagem'.</msg>
+<status status="PASS" starttime="20230830 11:39:18.366" endtime="20230830 11:39:18.531"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:lista-suspensa</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230830 11:39:18.532" level="INFO">Clicking element 'class:lista-suspensa'.</msg>
+<status status="PASS" starttime="20230830 11:39:18.532" endtime="20230830 11:39:18.591"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//option[contains(.,'Programação')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230830 11:39:18.592" level="INFO">Clicking element '//option[contains(.,'Programação')]'.</msg>
+<status status="PASS" starttime="20230830 11:39:18.592" endtime="20230830 11:39:18.636"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230830 11:39:28.637" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230830 11:39:18.636" endtime="20230830 11:39:28.637"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:form-botao</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230830 11:39:28.638" level="INFO">Clicking element 'id:form-botao'.</msg>
+<status status="PASS" starttime="20230830 11:39:28.637" endtime="20230830 11:39:28.682"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>class:colaborador</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230830 11:39:28.704" level="INFO">Element 'class:colaborador' is displayed.</msg>
+<status status="PASS" starttime="20230830 11:39:28.683" endtime="20230830 11:39:28.704"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230830 11:39:33.705" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230830 11:39:28.705" endtime="20230830 11:39:33.705"/>
+</kw>
+<status status="PASS" starttime="20230830 11:39:18.082" endtime="20230830 11:39:33.705"/>
+</test>
+<status status="PASS" starttime="20230830 11:39:16.039" endtime="20230830 11:39:33.706"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Primeiro Teste">Primeiro Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
